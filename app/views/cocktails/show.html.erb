@@ -1,0 +1,16 @@
+<div class="card">
+
+<h1><%= @cocktail.name%></h1>
+
+  <ul>
+    <% @doses.each do |dose| %>
+    <li>
+      ingredient: <%= dose.ingredient.name %>  Dose: <%= dose.description %>
+    </li>
+    <% end %>
+  </ul>
+
+  <%= link_to 'Create doses', new_cocktail_dose_path(@cocktail, @dose) %> |
+  <%= link_to 'See all', cocktails_path %>
+
+</div>

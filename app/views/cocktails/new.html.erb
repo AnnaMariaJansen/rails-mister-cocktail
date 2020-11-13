@@ -1,0 +1,9 @@
+<div class="container">
+ <div style="background-image: url('https://www.pexels.com/de-de/foto/alkoholiker-alkoholisch-alkoholisches-getrank-brille-1189257/');">
+  <%= simple_form_for (@cocktail) do |f| %>
+    <%= f.input :name %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<%= link_to 'See all', cocktails_path %> 
